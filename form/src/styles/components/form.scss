@@ -1,0 +1,88 @@
+.label {
+  color: $black;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 5px;
+}
+
+.label-hint {
+  color: $light-grey;
+  display: block;
+  font-size: 11px;
+  font-weight: 400;
+  padding-bottom: 5px;
+}
+
+.active {
+  color: $purple;
+}
+
+.error {
+  color: $red;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-design {
+  border: 1px solid $light-grey;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: inline-block;
+  font-size: 20px;
+  height: 59px;
+  padding: 14px;
+  width: 333px;
+  caret-color: $purple;
+  outline-color: $purple;
+
+  &:hover {
+    border: 2px solid $grey;
+  }
+
+  &:focus {
+    border: 2px solid $purple;
+  }
+}
+
+.input-error {
+  border: 2px solid $red;
+  outline-color: $red;
+  &:hover {
+    border: 2px solid $red;
+  }
+}
+
+input:disabled {
+  background: $disabled-color;
+}
+
+.icon {
+  margin-left: 12px;
+}
+
+.form-group {
+  margin-left: 40%;
+}
+
+.logo {
+  margin-left: 44%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.footer {
+  margin-top: 25px;
+  color: grey;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 44%;
+}
+
+.signin {
+  font-weight: 500;
+  color: black;
+}

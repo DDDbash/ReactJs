@@ -1,0 +1,20 @@
+$nav-height: 45px;
+
+$light-grey: #d3d3d3;
+$light-teal: #79cabe;
+$highlight-teal: #66afa4;
+$white: #ffffff;
+$yellow: #ffab15;
+$grey: #e4e4e4;
+$highlight-grey: #c6c6c6;
+
+body {
+  font-family: Mulish;
+  background: $light-grey;
+}
+
+.flex {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}

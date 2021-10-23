@@ -1,0 +1,28 @@
+.btn-orange {
+  width: 150px;
+  border-color: $orange;
+  background-color: $orange;
+  color: $white;
+  font-weight: 800;
+  padding: 10px 8px;
+
+  &:hover {
+    background: $darker-orange;
+    color: $white;
+  }
+}
+
+.btn-orange-reverse {
+  border-color: $orange;
+  background-color: $white;
+  color: $blue;
+  font-weight: 800;
+  padding: 10px 8px;
+  width: 150px;
+
+  &:hover {
+    border-color: $orange;
+    background: $darker-orange;
+    color: $white;
+  }
+}

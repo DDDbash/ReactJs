@@ -1,0 +1,141 @@
+.navbar-nav li ul {
+  display: flex;
+  list-style: none;
+  position: absolute;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  border-top: 5px solid $light-grey;
+  border-radius: 8px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 300ms linear;
+  top: 80px;
+  left: 0px;
+}
+
+.navbar-nav li:hover > ul {
+  max-height: fit-content;
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+  left: 0;
+  top: 62px;
+}
+
+.navbar-nav li ul li {
+  text-align: left;
+}
+
+.mega-menu__section-one {
+  width: 75%;
+  display: flex;
+  align-items: center;
+}
+
+.mega-menu__section-two {
+  width: 25%;
+  cursor: pointer;
+  background: $grey;
+  transition: all 300ms linear;
+
+  .upload {
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    opacity: 0.5;
+    transition: all 300ms linear;
+  }
+  &:hover {
+    background: $highlight-grey;
+
+    .upload {
+      opacity: 1;
+    }
+
+    .mega-menu__question-text {
+      opacity: 1;
+    }
+
+    .mega-menu__question-subtext {
+      opacity: 1;
+    }
+  }
+}
+
+.part-one {
+  width: 100% !important;
+  margin: auto;
+}
+
+.mega-menu__category-header {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: flex-end;
+  li {
+    width: 220px !important;
+    display: block;
+    line-height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.mega-menu__text {
+  display: grid;
+}
+
+.mega-menu__link {
+  color: black;
+  padding-top: 20px;
+  padding-left: 11px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.mega-menu__subtext {
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 10px;
+  padding-left: 11px;
+  padding-bottom: 20px;
+  color: black;
+  opacity: 40%;
+  line-height: 18px;
+}
+
+.part-two {
+  height: 100%;
+  border-radius: 0px 5px 8px 0px;
+  width: 100%;
+  padding-top: 45px;
+  span {
+    line-height: 25px;
+    padding-left: 30px;
+  }
+}
+
+.question-image {
+  margin: auto;
+  display: block;
+  transition: transform 300ms linear;
+}
+
+.mega-menu__question-text {
+  margin-top: 40px;
+  font-size: 15px;
+  font-weight: 700;
+  color: black;
+  opacity: 0.7;
+  transition: all 300ms linear;
+}
+
+.mega-menu__question-subtext {
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+  opacity: 0.7;
+  transition: all 300ms linear;
+}

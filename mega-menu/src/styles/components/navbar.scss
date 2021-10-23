@@ -1,0 +1,50 @@
+.navbar {
+  justify-content: flex-start;
+  line-height: $nav-height;
+  padding: 0px;
+
+  .z {
+    z-index: 1;
+  }
+
+  .sticky {
+    margin-right: 20px;
+  }
+
+  .stick {
+    margin-left: -22px !important;
+  }
+
+  .navbar-brand {
+    margin-left: 30px;
+  }
+
+  .nav-item {
+    color: black !important;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    width: 110px;
+    &:hover {
+      color: $yellow !important;
+      .nav-submenu {
+        display: block;
+      }
+    }
+  }
+
+  .nav-drop {
+    &:hover {
+      color: $yellow !important;
+      .nav-submenu {
+        display: block;
+      }
+    }
+  }
+
+  .nav-link {
+    color: inherit !important;
+    cursor: pointer;
+    transition: none;
+  }
+}

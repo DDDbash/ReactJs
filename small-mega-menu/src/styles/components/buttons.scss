@@ -1,0 +1,27 @@
+.btn-darkblue {
+  border-color: $white;
+  background-color: $dark-blue;
+  color: $white;
+  font-weight: 800;
+  padding: 10px 8px;
+  width: 150px;
+
+  &:hover {
+    background: $highlight-blue;
+    color: $white;
+  }
+}
+
+.btn-darkblue-reverse {
+  width: 150px;
+  border-color: $white;
+  background-color: $white;
+  color: $dark-blue;
+  font-weight: 800;
+  padding: 10px 8px;
+
+  &:hover {
+    background: $highlight-blue;
+    color: $white;
+  }
+}

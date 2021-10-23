@@ -1,0 +1,17 @@
+$nav-height: 45px;
+
+$light-grey: #d3d3d3;
+$dark-blue: #32375d;
+$white: #ffffff;
+$highlight-blue: #22274e;
+
+body {
+  font-family: Mulish;
+  background: $light-grey;
+}
+
+.flex {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
