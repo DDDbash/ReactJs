@@ -1,0 +1,29 @@
+body {
+  font-family: Roboto;
+}
+
+$sub-line-height: 20px;
+$main-line-height: 28px;
+
+$grey: #e5e5e5;
+$dark-grey: #5e6366;
+$white: #ffffff;
+$black: #000000;
+
+$xs-size: 2px;
+$s-size: 4px;
+$m-size: 14px;
+$l-size: 16px;
+$xl-size: 30px;
+
+.main {
+  background: $grey;
+  padding: $m-size;
+  height: 100vh;
+  width: 300px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}

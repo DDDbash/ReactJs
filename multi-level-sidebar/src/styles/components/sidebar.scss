@@ -1,0 +1,119 @@
+.main-category {
+  .btn-togglem[aria-expanded="true"] {
+    font-family: Quicksand !important;
+    font-weight: 600;
+    line-height: $main-line-height;
+    &::before {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.btn-togglem {
+  color: $dark-grey;
+  display: inline-flex;
+  align-items: center;
+  padding-top: $xs-size;
+  padding-bottom: $xs-size;
+  font-size: $l-size;
+  font-weight: 400;
+  border: 0;
+  height: $main-line-height;
+  width: 100%;
+
+  &:hover,
+  &:focus {
+    background-color: $white;
+  }
+
+  &::before {
+    width: $m-size;
+    line-height: 0;
+    content: url("https://i.postimg.cc/B6DpCsSG/Collapsed.png");
+    transition: transform 0.35s ease;
+    transform-origin: 0.5em 50%;
+  }
+}
+
+.sub-category {
+  font-family: Roboto !important;
+  list-style: none;
+  line-height: $main-line-height;
+  margin-left: $l-size;
+
+  .sub-folder {
+    font-size: $m-size;
+    font-weight: 400;
+    padding-top: $s-size;
+    padding-bottom: $s-size;
+  }
+}
+
+.sub {
+  margin-left: $xl-size;
+  .sub-item {
+    width: 100%;
+  }
+
+  .sub-text {
+    color: $dark-grey;
+    font-family: Roboto;
+    display: inline-flex;
+    padding-left: $m-size;
+    width: 100%;
+
+    .sub-text__header {
+      font-size: $m-size;
+      font-weight: 400;
+    }
+  }
+}
+
+.btn-toggle {
+  color: $dark-grey;
+  display: inline-flex;
+  align-items: center;
+  padding-top: $xs-size;
+  padding-bottom: $xs-size;
+  font-size: $l-size;
+  font-weight: 600;
+  border: 0;
+  height: $main-line-height;
+  width: 100%;
+
+  &:hover,
+  &:focus {
+    background-color: $white;
+  }
+
+  &::before {
+    width: $m-size;
+    line-height: 0;
+    content: url("https://i.postimg.cc/B6DpCsSG/Collapsed.png");
+    transition: transform 0.35s ease;
+    transform-origin: 0.5em 50%;
+  }
+}
+
+.btn-toggle[aria-expanded="true"] {
+  &::before {
+    transform: rotate(90deg);
+  }
+}
+
+.btn-toggle-nav a {
+  display: inline-flex;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: $black;
+    background-color: $white;
+    &::after {
+      margin-top: 3px;
+      margin-right: $m-size;
+      width: $m-size;
+      line-height: 0;
+      content: url("https://i.postimg.cc/FHD5cMGR/Right-Icon.png");
+    }
+  }
+}
