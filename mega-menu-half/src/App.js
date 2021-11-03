@@ -6,13 +6,21 @@ import activePath from './icons/path.svg';
 
 const App = () => {
   const [isHovered, setHover] = useState(false);
+  const [menu, setMenu] = React.useState(false);
   const handleEnter = () => setHover(true);
   const handleHover = () => setHover(!isHovered);
+  const toggleNav = () => setMenu(!menu);
+  const show = menu ? " open" : "";
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white">
       <div className="flex">
-        <ul className="navbar-nav">
+        <div className="hamburger" onClick={toggleNav}>
+          <div className="line"></div>
+          <div className="line"></div>
+          <div className="line"></div>
+        </div>
+        <ul className={"navbar-nav" + show}>
           <a href="#" className="navbar-brand">
             <img
               src={logo}
@@ -21,21 +29,21 @@ const App = () => {
               alt="" />
           </a>
           <li
-            className="nav-item"
+            className={"nav-item" + show}
             onMouseEnter={handleEnter}
             onMouseLeave={handleHover}
           >
             <a href="#" className="nav-link nav-drop">Product &nbsp;
               {isHovered ?
-                <img src={activePath} /> :
-                <img src={inactivePath} />}
+                <img className="path" src={activePath} /> :
+                <img className="path" src={inactivePath} />}
             </a>
             <SubMenu />
           </li>
-          <li className="nav-item">
+          <li className={"nav-item" + show}>
             <a href="#" className="nav-link">Overview</a>
           </li>
-          <li className="nav-item">
+          <li className={"nav-item" + show}>
             <a href="#" className="nav-link">Contact</a>
           </li>
         </ul>
