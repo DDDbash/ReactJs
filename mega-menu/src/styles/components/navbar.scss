@@ -48,3 +48,62 @@
     transition: none;
   }
 }
+
+.hamburger {
+  display: none;
+}
+
+.line {
+  width: 30px;
+  height: 3px;
+  background: black;
+  margin: 5px;
+}
+
+@media only screen and (max-width: 992px) {
+  .nav-item {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 400ms ease-out;
+    transition-delay: 50ms;
+  }
+  .open {
+    visibility: visible;
+    opacity: 1;
+  }
+  .hamburger {
+    display: block;
+    position: fixed;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+    z-index: 2;
+    &:hover,
+    &:focus {
+      background: $light-grey;
+      border-radius: 5px;
+    }
+  }
+  .navbar li ul {
+    display: none;
+  }
+  .navbar li:hover > ul {
+    display: none !important;
+  }
+  .navbar-nav {
+    width: 100vw;
+    position: fixed;
+    background: white;
+    height: 62px;
+    transition: all 700ms ease-out;
+  }
+  .path {
+    display: none;
+  }
+  .navbar-nav.open {
+    height: 240px;
+  }
+  .navbar .sticky {
+    display: none;
+  }
+}

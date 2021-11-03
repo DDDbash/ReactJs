@@ -8,11 +8,19 @@ const App = () => {
   const [isHovered, setHover] = useState(false);
   const handleEnter = () => setHover(true);
   const handleHover = () => setHover(!isHovered);
+  const [menu, setMenu] = useState(false);
+  const toggleNav = () => setMenu(!menu);
+  const show = menu ? " open" : "";
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white">
       <div className="flex">
-        <ul className="navbar-nav">
+        <ul className={"navbar-nav" + show}>
+          <div className="hamburger" onClick={toggleNav}>
+            <div className="line"></div>
+            <div className="line"></div>
+            <div className="line"></div>
+          </div>
           <a href="#" className="navbar-brand">
             <img
               src={logo}
@@ -21,21 +29,21 @@ const App = () => {
               alt="" />
           </a>
           <li
-            className="nav-item"
+            className={"nav-item" + show}
             onMouseEnter={handleEnter}
             onMouseLeave={handleHover}
           >
             <a href="#" className="nav-link nav-drop">Product &nbsp;
               {isHovered ?
-                <img src={pathActive} alt="" /> :
-                <img src={pathInactive} alt="" />}
+                <img className="path" src={pathActive} alt="" /> :
+                <img className="path" src={pathInactive} alt="" />}
             </a>
             <SubMenu />
           </li>
-          <li className="nav-item">
+          <li className={"nav-item" + show}>
             <a href="#" className="nav-link">Overview</a>
           </li>
-          <li className="nav-item">
+          <li className={"nav-item" + show}>
             <a href="#" className="nav-link">Contact</a>
           </li>
         </ul>
